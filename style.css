@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,aqua,blue);
+    padding: 10px;
+}
+
+.box{
+    width:100%;
+    max-width: 270px;
+    padding: 40px 20px 30px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    border-radius: 15px;
+}
+.box h2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.add{
+    background-color: rgb(172, 240, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+#ibox{
+    /* flex: 1; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    
+
+}
+#btn{
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    color: orange;
+    cursor: pointer;
+
+
+}
+ul li{
+    list-style: none;
+    user-select: none;
+    padding: 10px 30px 20px;
+    /* padding-left: 20px; */
+    position: relative;
+
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    top: 12px;
+    left: 5px;
+    /* background-color: black; */
+}
+ul li.checked{
+    text-decoration: line-through;
+    /* text-color:orange; */
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+
+}
